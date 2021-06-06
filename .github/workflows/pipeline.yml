@@ -17,7 +17,7 @@ jobs:
           java-version: 11
       - name: Assemble and test
         run: |
-          cd book-app
+          cd demo-service
           chmod +x gradlew
           ./gradlew build -PregistryUrl=${{ secrets.REGISTRY_URL }} -PregistryUsername=${{ secrets.REGISTRY_USERNAME }} -PregistrySecret=${{ secrets.REGISTRY_TOKEN }}
   package:
@@ -31,8 +31,8 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 11
-      - name: Build Docker image
+      - name: Build container image
         run: |
-          cd book-app
+          cd demo-service
           chmod +x gradlew
           ./gradlew bootBuildImage --publishImage -PregistryUrl=${{ secrets.REGISTRY_URL }} -PregistryUsername=${{ secrets.REGISTRY_USERNAME }} -PregistrySecret=${{ secrets.REGISTRY_TOKEN }}
