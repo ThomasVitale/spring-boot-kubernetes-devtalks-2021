@@ -33,9 +33,8 @@ dependencies {
 
 bootBuildImage {
 	imageName = "${project.property("registryUrl")}/${project.name}:${project.version}"
-	publish = true
+
 	docker {
-		//host = project.property("dockerHost")
 		publishRegistry {
 			username = project.property("registryUsername")
 			password = project.property("registrySecret")

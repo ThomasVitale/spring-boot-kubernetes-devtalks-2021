@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: demo-service
-          image: thomasvitale.azurecr.io/demo-service:0.1
+          image: thomasvitale.azurecr.io/devtalks-demo-service:0.1
           imagePullPolicy: Always
           ports:
             - containerPort: 8080

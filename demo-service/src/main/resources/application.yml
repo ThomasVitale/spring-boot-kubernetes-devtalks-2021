@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: demo-service
+    name: devtalks-demo-service
 
 demo:
   message: "Spring Boot in the cloud and beyond!"
