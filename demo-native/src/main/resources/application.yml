@@ -1,0 +1,10 @@
+server:
+  port: 8181
+
+spring:
+  application:
+    name: devtalks-demo-native
+
+demo:
+  message: "Spring Native in the cloud and beyond!"
+
