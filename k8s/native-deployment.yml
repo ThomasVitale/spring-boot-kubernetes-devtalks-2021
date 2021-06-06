@@ -18,6 +18,7 @@ spec:
         prometheus.io/path: "/actuator/prometheus"
         prometheus.io/port: "8181"
     spec:
+      terminationGracePeriodSeconds: 20
       containers:
         - name: demo-native
           image: thomasvitale.azurecr.io/devtalks-demo-native:0.1
@@ -33,7 +34,7 @@ spec:
           lifecycle:
             preStop:
               exec:
-                command: [ "sh", "-c", "sleep 10" ]
+                command: [ "sh", "-c", "sleep 5" ]
           livenessProbe:
             httpGet:
               path: /actuator/health/liveness
