@@ -1,0 +1,9 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: demo-service
+
+demo:
+  message: "Spring Boot in the cloud and beyond!"
