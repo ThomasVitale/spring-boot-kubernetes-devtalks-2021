@@ -9,3 +9,4 @@ Demonstration of:
 - Kubernetes deployment manifests, graceful shutdown, and health probes
 - Spring Boot configuration through ConfigMaps
 - Spring Boot monitoring with Prometheus, Loki, and Grafana
+- Native executables with Spring Native and GraalVM

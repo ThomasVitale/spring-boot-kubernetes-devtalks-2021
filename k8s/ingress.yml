@@ -8,13 +8,6 @@ spec:
   rules:
     - http:
         paths:
-          - path: /native
-            pathType: Prefix
-            backend:
-              service:
-                name: demo-native
-                port:
-                  number: 8181
           - path: /
             pathType: Prefix
             backend:
