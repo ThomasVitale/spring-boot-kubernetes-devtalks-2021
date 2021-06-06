@@ -32,6 +32,6 @@ jobs:
           java-version: 11
       - name: Build container image
         run: |
-          cd demo-service
+          cd demo-native
           chmod +x gradlew
           ./gradlew bootBuildImage --publishImage -PregistryUrl=${{ secrets.REGISTRY_URL }} -PregistryUsername=${{ secrets.REGISTRY_USERNAME }} -PregistrySecret=${{ secrets.REGISTRY_TOKEN }}
